@@ -43,9 +43,13 @@ Make sure you have Python installed on your system. You will also need to set up
 
 2. Open the index.html in the frontend folder
 
-3. ![App Demo](./images/demo.gif)
+![App Demo](images/demo.gif)
 
 
 
 
 
+
+
+
+[def]: ./images/demo.gif
