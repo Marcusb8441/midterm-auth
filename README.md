@@ -39,11 +39,11 @@ Make sure you have Python installed on your system. You will also need to set up
 
 ### Running the App
 1. Start the FastApi backend
-    uvicorn main:app --reload
+     uvicorn main:app --reload
 
 2. Open the index.html in the frontend folder
 
-3. ![App Demo](./demo.gif)
+![App Demo](./demo.gif)
 
 
 
