@@ -43,7 +43,8 @@ Make sure you have Python installed on your system. You will also need to set up
 
 2. Open the index.html in the frontend folder
 
-![App Demo](./demo.gif)
+3. ![App Demo](./images/demo.gif)
+
 
 
 
