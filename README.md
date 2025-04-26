@@ -50,14 +50,3 @@ Make sure you have Python installed on your system. You will also need to set up
      uvicorn main:app --reload
 
 2. Open the index.html in the frontend folder
-
-![App Demo]()
-
-
-
-
-
-
-
-
-[def]: ./images/demo.gif
