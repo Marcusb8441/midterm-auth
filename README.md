@@ -5,9 +5,7 @@ The **Realtor Property Tracker** is a web application designed to help potential
 
 ## Features
 **User Authentication** Secure signup and login system with JWT tokens
-![User Authentication Demo](screenshots/login.gif)
 **Property Management** Add, edit, and delete property listings
-![Property Management Demo](images/properties.gif)
 **Visited Status**  Track which properties have been visited
 **Comments** Add notes or comments about each property
 **Persistent Storage** All data stored in MongoDB
@@ -16,7 +14,8 @@ The **Realtor Property Tracker** is a web application designed to help potential
 - **Backend**: FastAPI - Web Framework, Beanie - Mongodb ODM, PyJWT - Token handling
 - **Data Storage**: MongoDB - Document Database
 
-
+![User Authentication Demo](screenshots/login.gif)
+![Property Management Demo](images/properties.gif)
 ## Installation and Setup
 
 ### Prerequisites
