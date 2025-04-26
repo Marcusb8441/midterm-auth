@@ -6,7 +6,6 @@
   <title>Realtor Property Tracker</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
@@ -14,37 +13,88 @@
   <div class="container mt-5">
     <h1 class="text-center mb-4">Realtor Property Tracker</h1>
 
-    <div class="row mb-4">
-      <div class="col-md-6 offset-md-3">
-        <h2>Add Property</h2>
-        <form id="property-form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name of Person</label>
-            <input type="text" class="form-control" id="name" placeholder="Person's Name" required>
+    <!-- Authentication Section -->
+    <div id="authSection" class="row mb-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h2>Sign Up</h2>
           </div>
-          <div class="mb-3">
-            <label for="address" class="form-label">Property Address</label>
-            <input type="text" class="form-control" id="address" placeholder="Property Address" required>
+          <div class="card-body">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="signupEmail" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+            </div>
+            <button class="btn btn-success" id="signupButton">Sign Up</button>
           </div>
-          <button type="button" class="btn btn-primary" onclick="addProperty()">Add Property</button>
-        </form>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h2>Login</h2>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="loginEmail" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+            </div>
+            <button class="btn btn-primary" id="loginButton">Login</button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <h2>Property Listings</h2>
-        <ul id="property-listings" class="list-group">
-        </ul>
+    <!-- App Section (initially hidden) -->
+    <div id="appSection" style="display: none;">
+      <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-outline-danger" id="logoutButton">Sign Out</button>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-6 offset-md-3">
+          <h2>Add Property</h2>
+          <form id="property-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name of Person</label>
+              <input type="text" class="form-control" id="name" placeholder="Person's Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">Property Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Property Address" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="visited">
+              <label class="form-check-label" for="visited">Visited</label>
+            </div>
+            <div class="mb-3">
+              <label for="comments" class="form-label">Comments</label>
+              <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="addPropertyButton">Add Property</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2>Property Listings</h2>
+          <ul id="property-listings" class="list-group">
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
   
+  <!-- JavaScript file -->
   <script src="/static/main.js"></script>
 </body>
 </html>

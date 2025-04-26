@@ -4,15 +4,18 @@
 The **Realtor Property Tracker** is a web application designed to help potential buyers track properties they are interested in. Users can add new properties, mark properties as visited, and add comments to the listings. It also allows the deletion of properties no longer of interest.
 
 ## Features
-- **Add Property**: Users can add a property with the name of the person looking to buy and the address of the property.
-- **Edit Property**: Users can mark a property as visited and add comments.
-- **Delete Property**: Users can remove properties they are no longer interested in.
-- **Responsive UI**: The app is built with Bootstrap for responsive design, making it easy to use on different devices.
-
+**User Authentication** Secure signup and login system with JWT tokens
+![User Authentication Demo](screenshots/login.gif)
+**Property Management** Add, edit, and delete property listings
+![Property Management Demo](images/properties.gif)
+**Visited Status**  Track which properties have been visited
+**Comments** Add notes or comments about each property
+**Persistent Storage** All data stored in MongoDB
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: FastAPI
-- **Data Storage**: In-memory database (list)
+- **Backend**: FastAPI - Web Framework, Beanie - Mongodb ODM, PyJWT - Token handling
+- **Data Storage**: MongoDB - Document Database
+
 
 ## Installation and Setup
 
@@ -22,10 +25,10 @@ Make sure you have Python installed on your system. You will also need to set up
 ### Setting up the Project
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Marcusb8441/TODO.git
+   git clone https://github.com/Marcusb8441/NEWTODO.git
 
 2. Navigate to directory
-    cd realtor-property-tracker
+    cd NEWTODO
 
 3. Create a virtual environment 
     python -m venv venv
@@ -37,13 +40,18 @@ Make sure you have Python installed on your system. You will also need to set up
 5. Install dependencies 
     pip install -r requirements.txt
 
+6. Set up MongoDB
+- Create a MongoDB database named "login"
+- Update the connection string in database.py if needed
+
+4. **Run the application**:
 ### Running the App
 1. Start the FastApi backend
      uvicorn main:app --reload
 
 2. Open the index.html in the frontend folder
 
-![App Demo](images/demo.gif)
+![App Demo]()
 
 
 
